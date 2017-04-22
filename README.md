@@ -25,9 +25,9 @@ The project requires three (3) documents which can be found on this repository. 
 ###Steps to run the created R script for the project
 In addition to reading this README.md and the other CodeBook.md, the reviewer of this project needs to run the script created for the project called run_analysis.R agaisnt the provided raw data set. In order to run the script, the following steps must be followed in order:-
 
-1. Download the raw data set provided for the project.
-2. Extract the raw data set downloaded as a zipped file.
-3. Once extracted, move all the files within the extracted folder into one (1) same location.
-4. Download the script and place it together with all the files in the raw data set in (3).
+1. Download the raw data set in zipped file provided for the project.
+2. Extract the raw data set downloaded.
+3. Once extracted, maintain the whole origianl folder structure. 
+4. Download the script and modify the 5th line to set the correct working directory where you extract the raw data set.
 5. Run the script.
-6. Observe the output of the script in a file called prepared_data_set.csv representing the prepared data set according the the project instructions.
+6. Observe the output of the script in a file called prepared_data.txt inside the extracted raw data set folder.
