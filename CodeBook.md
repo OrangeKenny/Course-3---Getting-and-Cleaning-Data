@@ -1,7 +1,7 @@
-#Code Book
+# Code Book
 This code book describes the data used in the Course Project of John Hopkins University Data Specialization Course 3.
 
-###Overview of the data set received
+### Overview of the data set received
 The main folder named after UCI HAR Dataset has two (2) subfolders in within. The two (2) subfolders within the main folders are test and train respectively. There are four (4) files in the folder UCI HAR Dataset and three (3) in each of the test and train subfolders. There is also another subfolder called Inertial Signals inside each of the train and test folder. Each Inertial Singals folder contains nine (9) files. The following attempts to layout the folder structure in the provided data set for this course project.
 
                           UCI HAR Dataset (4 files)
@@ -10,7 +10,7 @@ The main folder named after UCI HAR Dataset has two (2) subfolders in within. Th
             |                                     |
       Inertial Signals (9 files)          Inertial Signals(9 files)
 
-###Data files used for analysis
+### Data files used for analysis
 features.txt - This is a master file which lists all the names of 561 features of the observations.
 
 activity_labels.txt - This is a master file which lists all the activities possibly performed by each subject.
@@ -27,10 +27,10 @@ x_test.txt - This files contains the data for all the 2947 observations of the 5
 
 y_test.txt - This file contains 2947 observations each represents the activity ID for each of the 2947 observations in x_test.txt. The activity ID is mapped to activity_label.txt master file.
 
-###Data files NOT used for analysis
+### Data files NOT used for analysis
 All files provided in the Inertial Signals folders are not used for analysis for this course project.
 
-###Steps in cleaning the data files used for analysis. 
+### Steps in cleaning the data files used for analysis. 
 1. Rename all the features being measured in the transaction files i.e. x_train and x_test. This step will ensure all the observations in x_train and x_test are explained properly for each feature by referring to the master file features.txt.
 2. Join the activity information with the transaction files i.e. x_train and x_test. This step will ensure all the observations in x_train and x_test are joined with one column representing the kind of activity which contributes to each observation. Specifically, x_train joins with y_train and x_test joins with y_test.
 3. Join the definition of activity inforrmation for each observations in x_train and x_test. This is done by joining these observations with the master file activity_label with x_train and x_test.
